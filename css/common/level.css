@@ -1,0 +1,345 @@
+/* margin */
+.mT4{margin-top:4px!important;}
+.mT8{margin-top:8px!important;}
+.mT16{margin-top:16px!important;}
+.mT24{margin-top:24px!important;}
+.mT32{margin-top:32px!important;}
+.mB4{margin-bottom:4px!important;}
+.mB8{margin-bottom:8px!important;}
+.mB16{margin-bottom:16px!important;}
+.mB24{margin-bottom:24px!important;}
+.mb32{margin-bottom:32px!important;}
+.mL4{margin-left:4px!important;}
+.mL8{margin-left:8px!important;}
+.mL16{margin-left:16px!important;}
+.mL24{margin-left:24px!important;}
+.mL32{margin-left:32px!important;}
+.mR4{margin-right:4px!important;}
+.mR8{margin-right:8px!important;}
+.mR16{margin-right:16px!important;}
+.mR24{margin-right:24px!important;}
+.mR32{margin-right:32px!important;}
+
+/* 레벨 아이콘 */
+.ico_lv{
+    display:inline-block;width:40px;height:16px;margin-right:4px;
+    font-size:10px!important;line-height:14px!important;font-weight:normal;letter-spacing:normal;color:#fff!important;text-align:center!important;
+    border-radius:4px;position:relative;overflow:hidden;vertical-align:top;
+}
+.ico_lv:after{display:block;position:absolute;top:0;bottom:0;left:0;right:0;border:1px solid rgba(0, 0, 0, 0.1);border-radius:4px;content:''}
+/* 서비스레벨 */
+.ico_lv.svc::before{content:'LV';}
+/* 방송자레벨 */
+.ico_lv.mc::before{content:'MC';}
+/* 팬레벨 */
+.ico_lv.fan::before{content:'FAN';}
+/* lv 1 ~ 39 */
+.ico_lv.lv0139{background-color:#abbed1}
+/* lv 40 ~ 59 */
+.ico_lv.lv4059{background-color:#00ab92}
+/* lv 60 ~ 79 */
+.ico_lv.lv6079{background-color:#0057ec}
+/* lv 80 ~ 94 */
+.ico_lv.lv8094{background-color:#ff3366}
+/* lv 95 ~ 99 */
+.ico_lv.lv9599{background-color:#9405e5}
+/* lv 100 */
+.ico_lv.lv100{
+    background: rgb(255,187,0);
+    background: -moz-linear-gradient(180deg, rgba(255,187,0,1) 0%, rgba(255,0,161,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,187,0,1) 0%, rgba(255,0,161,1) 100%);
+    background: linear-gradient(180deg, rgba(255,187,0,1) 0%, rgba(255,0,161,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffbb00",endColorstr="#ff00a1",GradientType=1);
+}
+
+/* badge */
+.badge{position:relative;}
+.badge:before{
+    display:block;position:absolute;top:0;left:0;width:6px;height:6px;border-radius:50%;background-color:#dd3518;content:''
+}
+
+/* level progress bar */
+.lv_progress_wrap{position:relative;margin:4px 0;height:16px;line-height:16px;font-size:0}
+.lv_progress,
+.lv_percent{display:inline-block;vertical-align:top;height:16px;line-height:16px;}
+.lv_progress{position:relative;width:75%;max-width:100px;height:6px;background:rgba(0,0,0,0.1);border-radius:16px;margin-top:5px}
+.lv_progress_bar{position:absolute;top:0;left:0;height:100%;width:0;background-color:#dd3518;border-radius:16px;-webkit-transition:width .8s;transition:width .8s}
+.lv_percent{margin-left:8px;font-size:11px;color:#8e8e8e}
+/* level exp info */
+.lv_exp_info{font-size:11px;}
+
+/* 마이페이지 > 레벨 */
+.lv_tab{border-radius:4px;border:1px solid #dae1e6;background:#f4f4f8;overflow:hidden;box-sizing:border-box}
+.lv_tab *{box-sizing:border-box}
+.lv_tab::after{content:'';display:block;clear:both}
+.lv_tab li{position:relative;float:left;border-right:1px solid #dae1e6}
+.lv_tab li.active a{font-weight:bold;background:#fff;vertical-align:middle;color:#222}
+.lv_tab li a.badge::before{top:4px;left:auto;right:4px;}
+
+.lv_tab_3 li{width:33.333%}
+.lv_tab_3 li:last-child{border-right:0}
+.lv_tab_3 li a{padding:8px 0;display:block;text-align:center;font-size:14px;line-height:18px;color:#888}
+
+.lv_tab_2 li{width:50%}
+.lv_tab_2 li:last-child{border-right:0}
+.lv_tab_2 li a{padding:8px 0;display:block;text-align:center;font-size:14px;line-height:18px;color:#888}
+
+.lv_box{margin-top:24px;}
+.lv_box::after{content:'';display:block;clear:both}
+.lv_box .box_tit{font-size:16px;line-height:20px;font-weight:bold;margin-bottom:16px}
+.lv_box .box_info{padding-left:28px;font-size:14px;line-height:20px;color:#8e8e8e;background:url('https://pic.popkontv.com/images/www/images/popkon/level/ico_info.png') 0 -2px no-repeat;background-size:24px;}
+
+.lv_box.box_line{padding-top:40px;margin-top:40px;border-top:1px solid #dae1e6;}
+
+.lv_box .btn_more{
+    display:block;width:100%;padding:8px;
+    font-size:14px;color:#888;text-align:center;
+    border-radius:4px;border:1px solid #dae1e6;
+    -webkit-transition: all .3s;-moz-transition: all .3s;-o-transition: all .3s;transition: all .3s;
+}
+.lv_box .btn_more:hover{background: #f7f9fa;color:#444}
+
+
+/* level progress bar */
+.lv_progress_wrap{position:relative;margin-bottom:3px;height:16px;line-height:16px;}
+.lv_progress{position:relative;display:inline-block;margin-bottom:1px;width:75%;max-width:100px;height:6px;background:#e5e5e5;border-radius:16px}
+.lv_progress_bar{position:absolute;top:0;left:0;height:100%;width:0;background-color:#3061a3;border-radius:16px;-webkit-transition:width .8s;transition:width .8s}
+.lv_percent{display:inline-block;margin-left:8px;font-size:11px;line-height:16px;color:#8e8e8e}
+/* level exp info */
+.lv_exp_info{font-size:11px;}
+
+/* 마이페이지 레벨 wrap */
+.lv_wrap{padding-bottom:30px}
+.lv_wrap *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/* level detail */
+.lv_detail_card{display:table;width:100%;padding:16px 0;border:2px solid #ffd400;border-radius:16px;}
+.lv_detail_card .lv_grade{display:table-cell;width:105px;text-align:center;border-right:1px solid #e3e9f3;}
+.lv_detail_card .lv_grade .ico_lv{margin-right:0;}
+.lv_detail_card .lv_num{font-size:40px;font-weight:bold;line-height:1;margin-bottom:5px;}
+.lv_detail_card .lv_info{display:table-cell;vertical-align:middle;padding:0 24px;}
+
+/* 후원하는 방송자 팬레벨 리스트 */
+.fan_lv_detail_wrap{float:left;display:table;padding:16px;margin-bottom:16px;margin-right:2%;width:49%;position:relative;border:1px solid #e3e9f3;border-radius:4px}
+.fan_lv_detail_wrap:nth-child(even){margin-right:0}
+.fan_lv_detail_wrap:last-child,
+.fan_lv_detail_wrap:nth-last-child(2){margin-bottom:0;}
+.fan_lv_detail_wrap::after{content:'';display:block;clear:both}
+.fan_lv_detail_wrap .left{display:table-cell;vertical-align:middle;width:64px;float:none!important}
+.fan_lv_detail_wrap .ch_thumb{position:relative;display:block;margin-bottom:4px;width:40px;height:40px;border-radius:50%;background-color:#f5f5f5;background-size:cover;background-position:center;background-repeat:no-repeat}
+.fan_lv_detail_wrap .ch_thumb.live::before{content:'';position:absolute;top:1px;left:1px;width:8px;height:8px;background-color:#dd3518;border:1px solid #fff;border-radius:50%;-webkit-box-sizing:border-box;box-sizing:border-box}
+.fan_lv_detail_wrap .center{display:table-cell;vertical-align:middle;padding-right:20px;font-size:0;}
+.fan_lv_detail_wrap .center .nick{font-size:14px;color:#000}
+.fan_lv_detail_wrap .center>span,
+.fan_lv_detail_wrap .center>a{vertical-align:middle}
+.fan_lv_detail_wrap .lv_info{font-size:11px;color:#000}
+.fan_lv_detail_wrap .right{display:table-cell;vertical-align:middle;width:24px;float:none!important}
+.fan_lv_detail_wrap .ico_msg{display:block;width:24px;height:24px;background:url('https://pic.popkontv.com/images/www/images/popkon/level/ico_msg_s2.png') no-repeat;background-size:24px}
+.fan_lv_detail_wrap .msg{font-size:12px;line-height:18px;color:#888}
+.fan_lv_empty{display:block;padding:16px;text-align:center;font-size:14px;border:1px solid #e3e9f3;border-radius:4px;clear:both;line-height:20px;}
+
+/* 레벨보상 아이템 */
+.lv_reward_wrap{float:left;margin-bottom:16px;width:49%;margin-right:2%;padding:16px 20px;height:175px;border:1px solid #e3e9f3;border-radius:8px;background-color:#f4f4f8;}
+.lv_reward_wrap:nth-child(odd){margin-right:0}
+.lv_reward_wrap:last-child,
+.lv_reward_wrap:nth-last-child(2){margin-bottom:0;}
+.lv_reward_wrap .reward_hd{position:relative;margin-bottom:16px}
+.lv_reward_wrap .reward_hd::after{content:'';display:block;clear:both}
+.lv_reward_wrap .reward_tit{padding-right:84px;font-size:18px;line-height:24px;font-weight:bold}
+.lv_reward_wrap .btn_reward{position:absolute;top:0;right:0;display:block;padding:0 15px;font-size:12px;line-height:22px;color:#fff;background:#653ad8;border:1px solid #653ad8;border-radius:16px;outline:0;}
+.lv_reward_wrap .btn_none{position:absolute;top:0;right:0;display:none;float:right;padding:0 15px;font-size:12px;line-height:22px;color:#653ad8;background:transparent;border:1px solid #653ad8;border-radius:16px;outline:0;}
+.lv_reward_wrap .lv_reward_list li{position:relative;padding-left:16px;font-size:14px;line-height:20px;color:#222}
+.lv_reward_wrap .lv_reward_list li::before{position:absolute;top:9px;left:6px;content:'';display:block;width:2px;height:2px;border-radius:50%;background:#222}
+/* 레벨보상완료 */
+.lv_reward_wrap.reward_done{background-color:#f7f9fa}
+.lv_reward_wrap.reward_done .btn_reward{display:none}
+.lv_reward_wrap.reward_done .btn_none{display:block}
+.lv_reward_wrap.reward_done .reward_thumb::before{content:'';position:absolute;width:100%;height:100%;background-color:rgba(0,0,0,.5);background-image:url(/images/level/ico_check_big.svg);background-repeat:no-repeat;background-position:center;background-size:24px}
+
+/* 후원하는 방송자 카운트 */
+.spon_status{font-size:14px;line-height:20px;color:#8e8e8e}
+.spon_status .num{color:#653ad8}
+
+/* 레벨 정책 */
+.lv_notice_tit{position:relative;font-size:13px;margin-bottom:10px;line-height:18px;font-weight:bold;letter-spacing:-0.05em;color:#9d9d9d;margin-top:16px}
+.lv_notice_list{margin-bottom:24px}
+.lv_notice_list li{position:relative;padding-left:16px;font-size:12px;line-height:18px;letter-spacing:-0.05em;color:#9d9d9d;margin-top:4px}
+.lv_notice_list li:first-child{margin-top:0}
+.lv_notice_list li::before{position:absolute;top:8px;left:6px;content:'';display:inline-block;width:2px;height:2px;background:#9d9d9d;border-radius:50%}
+/* 회색 박스 */
+.lv_notice_card{padding:16px;border-radius:8px;background-color:#f7f9fa;border:1px solid #e3e9f3;font-size:12px;color:#8e8e8e;}
+.lv_notice_card dl{line-height:22px;}
+.lv_notice_card dl:after{display:block;clear:both;content:''}
+.lv_notice_card dl dt{float:left;}
+.lv_notice_card dl dd{margin-left:58px}
+
+/* 토스트 메세지 */
+.toast_wrap{
+    display:none;width:360px;margin-left:-180px;padding:16px;background-color:#3061a3;border-radius:8px;
+    position:fixed;left:50%;bottom:20px;z-index:1000;
+    font-size:14px;text-align:center;color:#FFF;line-height:18px;
+}
+
+/* inline block wrap */
+.ib_wrap{font-size:0;margin-top:4px;}
+.ib_wrap span{display:inline-block;}
+.ib_wrap.txt_c{text-align:center}
+.ib_wrap.dis_ib{display:inline-block!important;}
+.ib_wrap.mg0{margin:0}
+.ib_wrap.ellipsis,
+.ib_wrap .ellipsis{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ib_wrap .ellipsis.line2{
+    display:block;display:-webkit-box;overflow:hidden;max-height:36px;line-height:18px;text-overflow:ellipsis;
+    -webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal;
+}
+.ib_wrap *{font-size:13px;line-height:16px;vertical-align:middle}
+/* .ib_wrap .ico_lv{margin-top:2px} */
+
+/* 팝업 */
+.lv_popup_wrap * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.lv_popup_wrap button {
+    border: 0;
+}
+.none_scroll{overflow:hidden}
+.lv_popup_wrap{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);z-index:9999}
+.lv_popup_dim{position:absolute;top:0;left:0;right:0;bottom:0;z-index:5;}
+.lv_popup{position:absolute;top:50%;left:50%;width:328px;margin-top:-98px;margin-left:-164px;z-index:10;}
+.lv_popup .inner{display:table;width:100%;padding:0 27px;text-align:left;background-color:#f1f4f9}
+.lv_popup .lvup_info{
+    display:table-cell;vertical-align:middle;height:148px;padding-left:123px;
+    background-image:url('https://pic.popkontv.com/images/www/images/popkon/level/ico_lvup.png');background-size:107px 100px;background-position:0 50%;background-repeat:no-repeat;
+}
+.lv_popup .lvup_info h3{font-size:24px;font-weight:bold;line-height:34px;}
+.lv_popup .txt_lvup{margin-bottom:8px;width:126px;}
+.lv_popup .lvup_detail{font-size:14px;line-height:20px;letter-spacing:-0.085em}
+.lv_popup .lvup_detail strong{font-weight:bold;}
+.lv_popup .lvup_close{width:100%;font-size:18px;height:48px;line-height:48px;text-align:center;font-weight:bold;color:#fff;background-color:#6f01ff;outline:0}
+.lv_popup .lvup_close:focus{outline:0}
+
+
+/* A타입--------------------------------------------------------------- */
+/* 시청하기 방송자 정보 레이어 : A타입 */
+.mv_info_box .mc_info_layer{display:none;position:absolute;top:0;left:105%;padding:16px;background:#fff;border: solid 1px #dae1e6;border-radius:4px;box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);z-index:9999;font-weight:normal}
+.mc_info_layer .rank_status{margin-bottom:8px;font-size:13px;line-height:17px}
+.mc_info_layer .rank_status span{color:#dd3518;}
+.mc_info_layer .lv_info_progress{height:16px;line-height:16px;font-size:0;margin:4px 0}
+.mc_info_layer .lv_info_progress .lv_progress_wrap{display:inline-block;width:120px;vertical-align:top;margin:0}
+.mc_info_layer .lv_info_progress .lv_progress{display:inline-block;width:100px}
+.mc_info_layer .lv_info_progress .lv_percent{display:inline-block}
+.mc_info_layer .lv_exp_info{line-height:16px;margin-top:4px}
+
+/* 회원정보 layer 레벨 아이콘 조정 */
+.infoLayer .lv_info{height:16px;line-height:16px;margin:4px 0;font-size:0}
+.infoLayer .ico_lv{vertical-align:bottom;}
+.infoLayer .lv_progress_wrap{display:inline-block;margin:0;}
+.infoLayer .lv_progress{width:100px}
+.infoLayer .lv_percent{margin-left:6px}
+
+/* 메인페이지 레벨 아이콘 조정 */
+.brdcst_item .item_info dd.ib_wrap{margin:0;}
+.brdcst_item .item_info dd.ib_wrap>a{font-size:0}
+
+/* 라이브리스트 레벨 아이콘 조정 */
+/* .mv_info .ib_wrap{margin-top:0} */
+/* .mv_info .ico_lv{display:inline-block;margin-top:0} */
+/* .mv_box .userId{margin:2px 0} */
+.mv_box .ib_wrap .userId{margin:0;}
+
+/* 검색결과 레벨 아이콘 조정 */
+.mc_list .ico_lv{margin-top:1px}
+
+/* 랭킹 페이지 레벨 아이콘 조정 */
+.table_rank .ico_lv{margin-top:3px}
+
+/* VOD 댓글 답글 레벨 아이콘 조정 */
+.vod_reply_wrap .ico_lv{margin-top:0;}
+
+/* 마이채널 방송자정보 레벨 아이콘 조정 */
+.ch_lm .info .ib_wrap span{font-size:14px}
+
+/* 마이채널 즐겨찾기 레벨 아이콘 조정 */
+.table_thumb_list .ib_wrap{margin-top:0}
+.table_thumb_list .ib_wrap .ico_lv{margin-top:2px}
+
+/* 시청하기 레벨 아이콘 조정 */
+.mv_player_info .ib_wrap{margin:0;height:16px}
+.mv_player_info .ib_wrap span{vertical-align:top}
+.mv_player_info .ico_lv{margin-top:0}
+
+/* 마이페이지LNB 레벨 badge : A타입 */
+.aside .menu_lnb li.badge::before{top:10px;left:54px}
+
+/* 팬레벨 페이지 라이브 badge */
+.fan_lv_detail_wrap .badge::before{top:1px;left:1px;width:8px;height:8px;border:1px solid #fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+
+/* 123타입------------------------------------------------------------ */
+/* 시청하기 방송자 정보 레이어 : 123타입 */
+.live-view-area .mc_info_layer{display:none;position:absolute;top:0;left:105%;padding:16px;background:#fff;border: solid 1px #dae1e6;border-radius:4px;box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);z-index:9999;font-weight:normal}
+.live-view-area .mc_info_layer .rank_status{margin-bottom:8px;font-size:13px;line-height:17px}
+.live-view-area .mc_info_layer .rank_status span{color:#dd3518;}
+.live-view-area .mc_info_layer .ico_lv{margin:0 4px 0 0}
+.live-view-area .mc_info_layer .lv_info_progress{height:16px;line-height:16px;width:180px;font-size:0;margin:4px 0}
+.live-view-area .mc_info_layer .lv_progress_wrap{display:inline-block;width:130px;vertical-align:top;margin:0;font-size:0}
+.live-view-area .mc_info_layer .lv_progress{display:inline-block;width:100px}
+.live-view-area .mc_info_layer .lv_percent{display:inline-block}
+.live-view-area .mc_info_layer .lv_exp_info{line-height:16px;margin-top:4px}
+
+/* 회원정보 layer 레벨 아이콘 조정 : 1타입 */
+.login-my-id .lv_info{height:16px;line-height:16px;margin:4px 0;font-size:0}
+.login-my-id .ico_lv{display:inline-block;vertical-align:top;}
+.login-my-id .lv_progress_wrap{display:inline-block;margin:0;font-size:0}
+.login-my-id .lv_progress{display:inline-block;width:72px;vertical-align:top}
+.login-my-id .lv_percent{display:inline-block;margin-left:6px;vertical-align:top;line-height:16px}
+
+/* 회원정보 layer 레벨 아이콘 조정 : 2,3타입 */
+.popup-my-info .lv_info{height:16px;line-height:16px;margin:4px 0;font-size:0}
+.popup-my-info .ico_lv{display:inline-block;vertical-align:top;}
+.popup-my-info .lv_progress_wrap{display:inline-block;margin:0;font-size:0}
+.popup-my-info .lv_progress{display:inline-block;width:72px;vertical-align:top}
+.popup-my-info .lv_percent{display:inline-block;margin-left:6px;vertical-align:top;line-height:16px;color:#8e8e8e!important}
+
+/* 랭킹테이블 레벨 아이콘 조정 */
+/* .table-type01 table tbody tr td .ico_lv.mc{margin:0} */
+
+/* 시청하기 레벨 아이콘 조정 */
+.live-view-area .new_mc_nick_group.ib_wrap{margin:0}
+.live-view-area .new_mc_nick_group .ico_lv{margin:0 4px 0 0}
+
+/*  마이페이지LNB 레벨 badge : 123타입 */
+.snb_content .snb li.badge::before{top:10px;left:60px}
+
+
+/* 봄라이브 타입---------------------------------------------------------- */
+/* 시청하기 방송자 정보 레이어 : 봄타입 */
+.player-info .mc_info_layer{display:none;position:absolute;top:0;left:105%;padding:16px;background:#fff;border: solid 1px #dae1e6;border-radius:4px;box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);z-index:9999;font-weight:normal}
+.player-info .mc_info_layer .rank_status{margin-bottom:8px;font-size:13px;line-height:17px}
+.player-info .mc_info_layer .rank_status span{color:#dd3518;}
+.player-info .mc_info_layer .ico_lv{margin:0 4px 0 0}
+.player-info .mc_info_layer .lv_info_progress{height:16px;line-height:16px;width:180px;font-size:0;margin:4px 0}
+.player-info .mc_info_layer .lv_progress_wrap{display:inline-block;width:130px;vertical-align:top;margin:0;font-size:0}
+.player-info .mc_info_layer .lv_progress{display:inline-block;width:100px}
+.player-info .mc_info_layer .lv_percent{display:inline-block;font-size:11px;color:#8e8e8e;margin-left:8px!important}
+.player-info .mc_info_layer .lv_exp_info{line-height:16px;margin-top:4px}
+
+/* 회원정보 layer 레벨 아이콘 조정 : 봄타입 */
+.user-box .lv_info{height:16px;line-height:16px;margin:4px 0;font-size:0;padding:8px 15px}
+.user-box .ico_lv{display:inline-block;vertical-align:top;}
+.user-box .lv_progress_wrap{display:inline-block;margin:0;font-size:0}
+.user-box .lv_progress{display:inline-block;width:56px;vertical-align:top}
+.user-box .lv_percent{display:inline-block;margin-left:6px;vertical-align:top;line-height:16px}
+
+/* 라이브 페이지 레벨 아이콘 조정 */
+.data-list .thumb-data .ico_lv{float:left}
+
+/* 랭킹 페이지 레벨 아이콘 조정 */
+.rank-mc-info.ib_wrap{margin-top:8px}
+.rank-mc-info.ib_wrap .ico_lv{margin-top:0}
+
+/* 시청하기 레벨 아이콘 조정 */
+.player-info-area .info-txt .bjInfo .ib_wrap{margin-top:0;font-size:0}
+.player-info-area .info-txt .bjInfo .ico_lv{margin:1px 4px 0 2px}
